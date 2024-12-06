@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/title_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="-1dp"
+        android:background="#FF6600"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="5 Flatshares in Berlin"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/filter_icon"
+        android:layout_width="43dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="359dp"
+        android:layout_marginEnd="9dp"
+        android:contentDescription="Filter icon"
+        android:src="@drawable/filter" />
+
+    <ListView
+        android:id="@+id/flatshare_list"
+        android:layout_width="400dp"
+        android:layout_height="639dp"
+        android:layout_below="@+id/title_detail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="15dp"
+        android:padding="16dp" />
+</RelativeLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F8F8">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F48A22"
+        android:padding="16dp"
+        android:text="Find Home"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Cities Section -->
+    <HorizontalScrollView
+        android:layout_width="401dp"
+        android:layout_height="182dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <!-- City Item (Berlin) -->
+
+            <!-- City Item (Munich) -->
+
+            <!-- City Item (Hamburg) -->
+
+            <LinearLayout
+                android:id="@+id/image_berlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- android:background="@drawable/circle_shape" -->
+                <!-- android:scaleType="centerCrop" -->
+
+                <ImageView
+                    android:id="@+id/imgBerlin"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/berlin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Berlin"
+                    android:textColor="#C39409"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/image_munich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgMunich"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/munich" />
+                <!-- android:background="@drawable/circle_shape" -->
+                <!-- android:scaleType="centerCrop" -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Munich"
+                    android:textColor="#E0A903"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/image_hamburg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgHamburg"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/hamburg" />
+                <!-- android:background="@drawable/circle_shape" -->
+                <!-- android:scaleType="centerCrop" -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Hamburg"
+                    android:textColor="#EDB50C"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Search Bar -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="284dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="359dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/search_bar"
+            android:hint="Start your search"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="327dp"
+            android:layout_height="81dp"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Better chances of finding\n your dream home"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- Navigation Item (Home) -->
+        <LinearLayout
+            android:id="@+id/nav_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/homeicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#F48A22"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Navigation Item (Search) -->
+        <LinearLayout
+            android:id="@+id/nav_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/search_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textColor="#F48A22"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Navigation Item (Favourites) -->
+        <LinearLayout
+            android:id="@+id/nav_favourite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/favourite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favourites"
+                android:textColor="#F48A22"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Navigation Item (Contact) -->
+        <LinearLayout
+            android:id="@+id/nav_myads"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/contact" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textColor="#F48A22"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Navigation Item (Profile) -->
+        <LinearLayout
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="#F48A22"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
