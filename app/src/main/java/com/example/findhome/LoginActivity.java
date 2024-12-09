@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -38,6 +39,13 @@ public class LoginActivity extends AppCompatActivity {
         emailInput = findViewById(R.id.etEmailIN);
         passwordInput = findViewById(R.id.etPasswordIN);
         signInButton = findViewById(R.id.btnSignIn);
+
+        // Redirect to login activity
+        TextView loginText = findViewById(R.id.etCreateAccount);
+        loginText.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+            startActivity(intent);
+        });
 
         // Sign-In button click listener
         signInButton.setOnClickListener(v -> performSignIn());

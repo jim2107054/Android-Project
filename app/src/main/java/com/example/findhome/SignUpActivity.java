@@ -41,7 +41,7 @@ public class SignUpActivity extends AppCompatActivity {
         signUpButton.setOnClickListener(v -> performSignUp());
 
         // Redirect to login activity
-        TextView loginText = findViewById(R.id.etCreateAccount);
+        TextView loginText = findViewById(R.id.etAccountExist);
         loginText.setOnClickListener(v -> {
             Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
             startActivity(intent);

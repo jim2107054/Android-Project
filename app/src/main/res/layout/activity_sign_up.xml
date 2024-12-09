@@ -181,14 +181,15 @@
         app:layout_constraintVertical_bias="0.507" />
 
     <TextView
-        android:id="@+id/etCreateAccount"
+        android:id="@+id/etAccountExist"
         android:layout_width="250dp"
         android:layout_height="30dp"
-        android:fontFamily="@font/aclonica"
+        android:fontFamily="@font/alike_angular"
         android:text="Already have an account"
         android:textAlignment="center"
-        android:textColor="#4DF653"
-        android:textSize="18sp"
+        android:textColor="#3A3C3A"
+        android:textSize="16sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.552"
