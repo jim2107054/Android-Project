@@ -64,7 +64,9 @@ public class ProfileActivity extends AppCompatActivity{
     // Method to update UI dynamically
     private void updateUI(UserProfile userProfile) {
         ((TextView) findViewById(R.id.etName)).setText("Name: " + userProfile.getName());
+        ((TextView) findViewById(R.id.etProfileName)).setText(userProfile.getName());
         ((TextView) findViewById(R.id.etEmail)).setText("Email: " + userProfile.getEmail());
+        ((TextView) findViewById(R.id.etProfileEmail)).setText(userProfile.getEmail());
         ((TextView) findViewById(R.id.etDept)).setText("Department: " + userProfile.getDepartment());
         ((TextView) findViewById(R.id.etDivision)).setText("Division: " + userProfile.getDivision());
         ((TextView) findViewById(R.id.etPhone)).setText("Phone: " + userProfile.getPhone());
