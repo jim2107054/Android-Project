@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class ProfileActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity{
     private DatabaseReference database; // Firebase Database Reference
     private String userId = "user"; // Replace with Firebase Authentication UID if integrated
     int user = 0;
