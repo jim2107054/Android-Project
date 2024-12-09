@@ -123,21 +123,21 @@
         app:layout_constraintTop_toBottomOf="@+id/etRentIT1"
         app:srcCompat="@drawable/taka" />
 
-    <TextView
-        android:id="@+id/etRentB1"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:text="Rent without bills                                     2000 TK"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/etpriceIT1"
-        app:layout_constraintTop_toBottomOf="@+id/etpriceIT1"
-        app:layout_constraintVertical_bias="0.122" />
+        <TextView
+            android:id="@+id/etRentB1"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Rent without bills                                     2000 TK"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etpriceIT1"
+            app:layout_constraintTop_toBottomOf="@+id/etpriceIT1"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
+        <TextView
         android:id="@+id/etUtilitiesB1"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
@@ -156,14 +156,12 @@
             android:id="@+id/fanId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
             android:text="Fan will provided."
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/etBedB1"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etBedB1"
-            app:layout_constraintTop_toBottomOf="@+id/etBedB1" />
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="658dp" />
 
         <TextView
         android:id="@+id/etExistingThingsB1"
@@ -189,36 +187,23 @@
         app:layout_constraintStart_toStartOf="@+id/etExistingThingsB1"
         app:layout_constraintTop_toBottomOf="@+id/etExistingThingsB1" />
 
+        <!-- Facilities are -->
+
         <TextView
             android:id="@+id/etFacilitiesB1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="sans-serif"
             android:text="Facilities"
             android:textColor="#F69C18"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintHorizontal_bias="0.066"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etDepositB1"
-            app:layout_constraintVertical_bias="0.15" />
-    <!-- Facilities are -->
-        <TextView
-            android:id="@+id/etBedB1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/aclonica"
-            android:text="Bed will be provided."
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.184"
-            app:layout_constraintStart_toStartOf="@+id/etFacilitiesB1"
-            app:layout_constraintTop_toBottomOf="@+id/etFacilitiesB1" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -237,12 +222,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="sans-serif"
             android:text="Bed will be provided."
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.184"
+            app:layout_constraintHorizontal_bias="0.169"
             app:layout_constraintStart_toStartOf="@+id/etFacilitiesB1"
             app:layout_constraintTop_toBottomOf="@+id/etFacilitiesB1" />
 
@@ -295,6 +280,7 @@
             android:layout_width="284dp"
             android:layout_height="66dp"
             android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
             android:text="The house has a deep tube well for \ndrinking water and supplies water for other necessary purposes."
             android:textAlignment="textStart"
             android:textSize="16sp"

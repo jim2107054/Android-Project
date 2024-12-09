@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -41,6 +42,14 @@ public class ProfileActivity extends AppCompatActivity{
         // Delete Profile Button Listener
         Button deleteProfileButton = findViewById(R.id.btnDelete);
         deleteProfileButton.setOnClickListener(v -> confirmDeleteProfile());
+        Button logoutProfileButton = findViewById(R.id.btnLogout);
+        logoutProfileButton.setOnClickListener(v -> logout());
+    }
+
+    private void logout(){
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(ProfileActivity.this, Splash_Screen.class));
+        Toast.makeText(ProfileActivity.this, "Logout  Successful", Toast.LENGTH_SHORT).show();
     }
 
     // Method to load user profile (READ operation)

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FindHome"
         tools:targetApi="31">
         <activity
+            android:name=".Logout"
+            android:exported="false" />
+        <activity
             android:name=".GetPostCode"
             android:exported="false" />
         <activity
