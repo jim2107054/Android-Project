@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091"
+        app:layout_constraintVertical_bias="0.144"
         app:srcCompat="@drawable/myapplogo" />
 
     <TextView
@@ -34,10 +34,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <TextView
         android:id="@+id/textView2"
@@ -49,6 +49,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/appName"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="@+id/appName"
         app:layout_constraintTop_toBottomOf="@+id/appName"
         app:layout_constraintVertical_bias="0.0" />
@@ -64,27 +65,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/etEmailAddress"
-        android:layout_width="325dp"
-        android:layout_height="57dp"
-        android:drawableLeft="@android:drawable/sym_action_email"
-        android:drawablePadding="15dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textLogin"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="@+id/textLogin"
-        app:layout_constraintTop_toBottomOf="@+id/textLogin"
-        app:layout_constraintVertical_bias="0.016" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -101,70 +85,44 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/etEmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/etEmailAddress"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintVertical_bias="0.039" />
 
-    <TextView
-        android:id="@+id/etOr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:fontFamily="@font/aclonica"
-        android:text="or"
-        android:textSize="17dp"
+    <EditText
+        android:id="@+id/etDept"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/engineericon"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Department(CSE/EEE/ME..)"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="@+id/etPassword"
-        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/etPassword"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
-    <TextView
-        android:id="@+id/etContinueWithFBG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aclonica"
-        android:text="Continue With"
-        android:textAlignment="center"
-        android:textSize="20sp"
+    <EditText
+        android:id="@+id/etEmailAddress"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/etOr"
-        app:layout_constraintHorizontal_bias="0.406"
-        app:layout_constraintStart_toStartOf="@+id/etOr"
-        app:layout_constraintTop_toBottomOf="@+id/etOr"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnFb"
-        android:layout_width="152dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/whitebutton"
-        android:drawableLeft="@drawable/fbicon"
-        android:text="Fackbook"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnGoogle"
-        app:layout_constraintTop_toBottomOf="@+id/etContinueWithFBG" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnGoogle"
-        android:layout_width="152dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/whitebutton"
-        android:drawableLeft="@drawable/googleicon"
-        android:text="Google"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/btnFb"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etContinueWithFBG" />
+        app:layout_constraintEnd_toEndOf="@+id/textLogin"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/textLogin"
+        app:layout_constraintTop_toBottomOf="@+id/textLogin"
+        app:layout_constraintVertical_bias="0.123" />
 
     <Button
         android:id="@+id/btnSignUp"
-        android:layout_width="115dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
         android:background="@drawable/greenbutton"
         android:fontFamily="@font/alike_angular"
@@ -174,11 +132,11 @@
         android:textColorLink="#4DA251"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnFb"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="@+id/btnGoogle"
-        app:layout_constraintTop_toBottomOf="@+id/etContinueWithFBG"
-        app:layout_constraintVertical_bias="0.507" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDept"
+        app:layout_constraintVertical_bias="0.295" />
 
     <TextView
         android:id="@+id/etAccountExist"
@@ -192,25 +150,9 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintHorizontal_bias="0.409"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSignUp"
-        app:layout_constraintVertical_bias="0.2" />
-
-    <EditText
-        android:id="@+id/etDept"
-        android:layout_width="325dp"
-        android:layout_height="57dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/engineericon"
-        android:drawablePadding="15dp"
-        android:ems="10"
-        android:hint="Department(CSE/EEE/ME..)"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="@+id/etPassword"
-        app:layout_constraintHorizontal_bias="0.38"
-        app:layout_constraintStart_toStartOf="@+id/etPassword"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintVertical_bias="0.194" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

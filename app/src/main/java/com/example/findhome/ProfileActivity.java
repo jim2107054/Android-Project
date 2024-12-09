@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,6 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class ProfileActivity extends AppCompatActivity{
     private DatabaseReference database; // Firebase Database Reference
     private String userId = "user"; // Replace with Firebase Authentication UID if integrated
+    private Button api;
     int user = 0;
 
     @Override
@@ -61,6 +61,9 @@ public class ProfileActivity extends AppCompatActivity{
         });
     }
 
+    //Get PostCode through API.
+    //api = findViewById(R.id.btnGetCode);
+
     // Method to update UI dynamically
     private void updateUI(UserProfile userProfile) {
         ((TextView) findViewById(R.id.etName)).setText("Name: " + userProfile.getName());
@@ -78,14 +81,21 @@ public class ProfileActivity extends AppCompatActivity{
         View dialogView = LayoutInflater.from(this).inflate(R.layout.edit_profile_dialog, null);
         AlertDialog dialog = new AlertDialog.Builder(this).setView(dialogView).create();
 
-        EditText editName = dialogView.findViewById(R.id.editName);
-        EditText editEmail = dialogView.findViewById(R.id.editEmail);
-        EditText editDepartment = dialogView.findViewById(R.id.editDepartment);
-        EditText editDivision = dialogView.findViewById(R.id.editDivision);
-        EditText editPhone = dialogView.findViewById(R.id.editPhone);
-        EditText editPostCode = dialogView.findViewById(R.id.editPostCode);
+        EditText editName = dialogView.findViewById(R.id.etName);
+        EditText editEmail = dialogView.findViewById(R.id.etEmail);
+        EditText editDepartment = dialogView.findViewById(R.id.etDept);
+        EditText editDivision = dialogView.findViewById(R.id.etDivision);
+        EditText editPhone = dialogView.findViewById(R.id.etPhone);
+        EditText editPostCode = dialogView.findViewById(R.id.etPostCode);
 
         Button saveButton = dialogView.findViewById(R.id.saveButton);
+        Button getCode = dialogView.findViewById(R.id.btnGetCode);
+
+        getCode.setOnClickListener(v -> {
+            Intent intent = new Intent(ProfileActivity.this, GetPostCode.class);
+            startActivity(intent);
+        });
+
         saveButton.setOnClickListener(saveView -> {
             // Save the updated profile (CREATE/UPDATE operation)
             UserProfile updatedProfile = new UserProfile(
