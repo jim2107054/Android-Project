@@ -6,6 +6,7 @@ import android.widget.LinearLayout;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -14,9 +15,9 @@ public class House1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_house1);
+        setContentView(R.layout.activity_property_details);
 
-        LinearLayout mainLayout = findViewById(R.id.mainLayout);
+        ConstraintLayout mainLayout = findViewById(R.id.mainLayoutB1);
 
         PropertyDetailsActivity propertyDetails = new PropertyDetailsActivity(this);
         mainLayout.addView(propertyDetails.getView());

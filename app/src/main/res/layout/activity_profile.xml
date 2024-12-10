@@ -11,13 +11,16 @@
     <!-- Top Background -->
 
     <!-- Information Fields -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="369dp"
         android:layout_height="296dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/top_background"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/etProfileName"
@@ -60,6 +63,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="336dp"
         android:layout_height="596dp"
         android:layout_marginStart="12dp"
