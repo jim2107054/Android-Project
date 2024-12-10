@@ -74,4 +74,3 @@ public class CityDetailsActivityBerlin extends AppCompatActivity {
         }
     }
 }
-

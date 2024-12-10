@@ -24,7 +24,7 @@ public class CityDetailsActivityMunich extends AppCompatActivity {
 
         // Set data based on the selected city
         if (city != null) {
-            if (city.equals("Hamburg")) {
+            if (city.equals("Munich")) {
 //                cityImage = findViewById(R.id.imageh);
 //                cityName = findViewById(R.id.textb1);
 //

@@ -16,7 +16,7 @@
             android:background="#F48A22"
             android:gravity="center"
             android:padding="16dp"
-            android:text="Find your dream Home in Hamburg"
+            android:text="Find your dream Home in Munich"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />

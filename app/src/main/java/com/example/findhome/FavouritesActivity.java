@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.HashMap;
 
 public class FavouritesActivity extends AppCompatActivity {
 
@@ -21,4 +24,6 @@ public class FavouritesActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+
 }
