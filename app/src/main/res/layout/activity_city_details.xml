@@ -16,7 +16,7 @@
             android:background="#F48A22"
             android:gravity="center"
             android:padding="16dp"
-            android:text="Find your dream Home in Berlin"
+            android:text="Find your dream Home in IT Gate."
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -67,8 +67,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Room for KUET students | House in IT gate | Sopnonir | 2000 Taka | 2 person"
-                android:textColor="#EBB20A"
+                android:text="Room for KUET students | House in IT gate | Niharika | 5000 Taka | 3 person"
+                android:textColor="#161513"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -92,8 +92,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Room for KUET students | House in IT gate | Sopnonir | 2000 Taka | 2 person"
-                android:textColor="#EBB20A"
+                android:text="Room for KUET students| Only For Girls| House in IT gate | Dream Place | 2500 Taka | 2 person"
+                android:textColor="#161513"
                 android:textSize="16sp" />
         </LinearLayout>
 
