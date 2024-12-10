@@ -18,112 +18,94 @@
         android:textStyle="bold"
         android:gravity="center" />
 
-    <!-- Cities Section -->
-    <HorizontalScrollView
-        android:layout_width="401dp"
-        android:layout_height="182dp"
-        android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/image_berlin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="20dp"
-            android:orientation="horizontal">
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <!-- City Item (Berlin) -->
+            <!-- android:background="@drawable/circle_shape" -->
+            <!-- android:scaleType="centerCrop" -->
 
-            <!-- City Item (Munich) -->
+            <ImageView
+                android:id="@+id/imgBerlin"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/berlin" />
 
-            <!-- City Item (Hamburg) -->
-
-            <LinearLayout
-                android:id="@+id/image_berlin"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="16dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <!-- android:background="@drawable/circle_shape" -->
-                <!-- android:scaleType="centerCrop" -->
-
-                <ImageView
-                    android:id="@+id/imgBerlin"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/berlin" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:text="Berlin"
-                    android:textColor="#C39409"
-                    android:textSize="25sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/image_munich"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imgMunich"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/munich" />
-                <!-- android:background="@drawable/circle_shape" -->
-                <!-- android:scaleType="centerCrop" -->
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:text="Munich"
-                    android:textColor="#E0A903"
-                    android:textSize="25sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/image_hamburg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imgHamburg"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/hamburg" />
-                <!-- android:background="@drawable/circle_shape" -->
-                <!-- android:scaleType="centerCrop" -->
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:text="Hamburg"
-                    android:textColor="#EDB50C"
-                    android:textSize="25sp" />
-            </LinearLayout>
+                android:layout_marginTop="15dp"
+                android:text="Berlin"
+                android:textColor="#C39409"
+                android:textSize="25sp" />
         </LinearLayout>
-    </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/image_munich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgMunich"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/munich" />
+            <!-- android:background="@drawable/circle_shape" -->
+            <!-- android:scaleType="centerCrop" -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Munich"
+                android:textColor="#E0A903"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/image_hamburg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgHamburg"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/hamburg" />
+            <!-- android:background="@drawable/circle_shape" -->
+            <!-- android:scaleType="centerCrop" -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Hamburg"
+                android:textColor="#EDB50C"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
 
     <!-- Search Bar -->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="284dp"
-        android:layout_margin="5dp"
-        android:layout_marginStart="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
         android:background="#FFFFFF"
@@ -132,23 +114,19 @@
 
         <EditText
             android:id="@+id/search_bar"
-            android:layout_width="359dp"
-            android:layout_height="69dp"
-            android:layout_marginTop="60dp"
-            android:background="@drawable/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:hint="Start your search"
             android:padding="12dp" />
 
         <TextView
-            android:layout_width="327dp"
-            android:layout_height="81dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
             android:text="Better chances of finding\n your dream home"
             android:textAlignment="center"
-            android:textSize="25sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -156,9 +134,10 @@
     <LinearLayout
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_height="match_parent"
         android:background="#FFFFFF"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
         android:orientation="horizontal"
         android:padding="12dp">
 

@@ -200,8 +200,9 @@
             android:id="@+id/img1"
             android:layout_width="50dp"
             android:layout_height="38dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="@+id/etFacilitiesB1"
+            app:layout_constraintHorizontal_bias="0.579"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etFacilitiesB1"
             app:srcCompat="@drawable/bed" />
@@ -227,7 +228,7 @@
             app:srcCompat="@drawable/water" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imgCCtvB1"
             android:layout_width="38dp"
             android:layout_height="32dp"
             android:layout_marginTop="30dp"
@@ -281,7 +282,7 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.093"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imgCCtvB1"
             app:layout_constraintTop_toBottomOf="@+id/etWaterB1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
