@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         search=findViewById(R.id.search_bar);
         textView=findViewById(R.id.bettercharnce);
 
+        //for searching from the home page.
+//        searchText = findViewById(R.id.search_bar);
+
         // Set click listeners for city items
         imageBerlin.setOnClickListener(v -> navigateToCityDetailsBerlin("Berlin"));
         imageMunich.setOnClickListener(v -> navigateToCityDetailsMunich("Munich"));
